@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'iceSotong-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceSotong-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IAMAPLAYER';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonState';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/GangwonState.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #F7F2ED;
+    line-height: 2.0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%
+}
+
+#onlyko {
+    width: 20px;
+    margin-top : 40px;
+}
+
+#onlykorean:hover {
+    color : rgba(153, 143, 216, 0.723);
+}
+.header-div {
+    display: flex;
+    justify-content: right;
+}
+.page-header p {
+    font-family: 'iceSotong-Rg';
+    font-size : 1.3em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#main-name {
+    font-size : 3.0em;
+    font-family: 'iceSotong-Rg';
+}
+.home-icon {
+    width: 20px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-family: 'omyu_pretty';
+}
+.main-nav li {
+
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size : 1.5em;   
+}
+
+.main-nav a {
+    color : black;
+}
+
+.main-nav a:hover {
+    border-bottom: 2px solid rgb(207, 116, 116);
+   
+}
+
+.main-nav img {
+    width: 20px;
+}
+
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+}
+.home-img img{
+    width: 800px;
+    height: 600px;
+}
+
+#by-jh {
+    display: flex;
+    justify-content: center;
+    font-family: 'IAMAPLAYER';
+
+}
+
+
+/*==================================================homepage*/
+.introduce-container{
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.introduce-title {
+    font-size: 1.25em;
+    text-align: center;
+    font-family: 'intelone-mono-font-family-regular';
+}
+
+.introduce-img img {
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right :20px;
+}
+.introduce-img {
+    display: flex;
+    justify-content: center;
+}
+
+.introduce-name {
+    padding-left: 3%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title {
+    line-height: 1.2;
+    
+}
+.introduce-name p {
+    font-size: 1.5em;
+    font-family: 'omyu_pretty';
+    line-height: 1.2;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    height: cover;
+    width: cover;
+    background-color: rgba(226, 215, 196, 0.779);
+    
+}
+#title-border {
+    width: 93px;
+    height: 2.5px;
+    background: rgb(206, 95, 95);
+    border: 0;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    
+}
+
+.grid { 
+    display : grid;
+    gap : 26px;
+    grid-template-columns: repeat(3, minmax(150px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+    
+}
+.introduce-title2 {
+   text-align: center; 
+   font-family: 'intelone-mono-font-family-regular';
+}
+
+/*========================================================project*/
+#homepage-img {
+    border: 2px solid rgba(161, 119, 74, 0.863);
+    width: 70%;
+   
+}
+
+.project-container1 {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu {
+    font-family: 'omyu_pretty';
+    font-size: 1.5em;
+}
+.outer p {
+    font-family: 'omyu_pretty';
+    font-size: 1.15em;
+}
+
+.outer ul {
+    font-family: 'omyu_pretty';
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.outer li {
+    font-family: 'intelone-mono-font-family-regular';
+    margin-top: 10px;
+}
+
+.outer ul {
+    border-bottom: 2px solid rgb(204, 70, 63);
+}
+.outer {
+    margin: 20px 20px 20px 20px;
+    
+
+}
+
+.outer img {
+    width: 20px;
+    height: 20;
+    margin-left: 5px;
+}
+
+.outer b {
+    font-size: 1.5em;
+}
+
+.preparing img{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

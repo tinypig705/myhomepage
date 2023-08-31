@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="introduce-header-div">
+        <header class="page-header wrapper">
+            <div class="header-div">
+                <p id="onlykorean"><img id="onlyko" src="../img/지구본.png" alt="onlyKorean">
+                    한국어만 가능 :)</p>
+                </a>
+                <script>
+                    const $onlyko = document.getElementById('onlykorean');
+                    $onlyko.addEventListener('click', function(){
+                        alert('한국어만 가능합니다 ^^b');
+                    });
+                </script>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="../homepage/homepage.html" ><img src="../img/homeicon.png">메인으로</a></li>
+                    <li><a href="../homepage/introduce.html" >소개</a></li>
+                    <li><a href="../homepage/project.html" >프로젝트</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+            <div class="project-container1 wrapper">
+            <div class="outer o1">
+                <div class="menu m1">홈페이지 만들기<img src="../img/화살표.png"></div>
+                <img id="homepage-img" src="../img/프로젝트이미지1.png">
+                <p>작품 제작 기간 : 23.08.28 ~ 23.08.31 <br>
+                   <b>작품 후기</b><br> 학원이 끝나면 복습한답시고 늦게 시작해 만들면서
+                   세세한 디테일까지 신경쓰지 못한점, 여러가지 기능들이 부실한점이 아쉬워
+                   일찍 시작해 부지런히 만들었다면 스스로 만족스러운 퀄리티가 나왔을것 같습니다.
+                   하지만 만들면서 코드에 대한 이해가 많이 되었으며 작업 하면서 점점 알아가는것이
+                   좋은 공부가 되었습니다.
+                   <br> <ul>피드백</ul>
+                        <li> Javascript,jquery 부실 공부필요 ㅠㅠ</li>
+                        <li> html문을 작성하며 id,class명 구분 잘 지어 작명</li>
+                        <li> 과제 미루지 말기.. </li>
+                </p>
+                
+            </div>
+            
+            <div class="outer o2">
+                <div class="menu m2">추가예정입니다<img src="../img/화살표.png"></div>
+                <div class="preparing">
+                 <img src="../img/추가예정-1.jpg">
+                 </div>
+            </div>
+            <div class="outer o3">
+                <div class="menu m3">추가예정입니다<img src="../img/화살표.png"></div>
+                <div class="preparing">
+                <img src="../img/추가예정-2.jpg">
+                </div>
+            </div>
+            <div class="outer o4">
+                <div class="menu m4">추가예정입니다<img src="../img/화살표.png"></div>
+                <div class="preparing">
+                <img src="../img/추가예정-3.jpg">
+                </div>
+            </div>
+            <div class="outer o5">
+                <div class="menu m5">추가예정입니다<img src="../img/화살표.png"></div>
+                <div class="preparing">
+                <img src="../img/추가예정-4.jpg" class="preparing">
+                </div>
+            </div>
+            </div>
+        <script>
+
+        $(document).ready(function() {
+            $(".outer .menu").nextAll().hide();
+
+            $(".outer .menu").click(function() {
+                $(this).nextAll().slideToggle(500);
+            });
+        });
+        </script>
+    <footer>
+    <div id="by-jh"class="wrapper">
+        <p><small>&copy; 2023.08 - MyHomePage.assignment by Junhong</small></p>
+    </div>
+</footer> 
+</body>
+
+</html>
